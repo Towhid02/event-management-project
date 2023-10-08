@@ -1,0 +1,112 @@
+[
+    {
+      "name": "Weddings",
+      "title": "Wedding Planner",
+      "id": 1,
+      "description": "We specialize in planning and coordinating weddings of all sizes and budgets. Our team of experienced professionals will work with you to create the wedding of your dreams, from the initial planning stages to the day of the event itself.",
+      "image": "https://i.ibb.co/cYVLTfN/What-does-a-full-service-wedding-planner-do-hautefetes.jpg",
+      "rating": 4.5,
+      "price": 100000
+    },
+    {
+      "name": "Birthday Parties",
+      "title": "Birthday Party Planner",
+      "id": 2,
+      "description": "We specialize in planning and coordinating birthday parties for all ages. Our team of experienced professionals will work with you to create a party that is both fun and memorable for your guests.",
+      "image": "https://i.ibb.co/rxqTD4t/birthday.jpg",
+      "rating": 4.8,
+      "price": 50000
+    },
+    {
+      "name": "Anniversaries",
+      "title": "Anniversary Planner",
+      "id": 3,
+      "description": "We specialize in planning and coordinating anniversaries of all sizes and budgets. Our team of experienced professionals will work with you to create an anniversary celebration that is both romantic and unforgettable.",
+      "image": "https://i.ibb.co/RCsMt2G/wedding-planners-zeal-wedding-events-entrance-decor-15-289977-158745735287703.jpg",
+      "rating": 4.7,
+      "price": 25000
+    },
+    {
+      "name": "Engagement Parties",
+      "title": "Engagement Party Planner",
+      "id": 4,
+      "description": "We specialize in planning and coordinating engagement parties of all sizes and budgets. Our team of experienced professionals will work with you to create an engagement party that is both fun and memorable for you and your guests.",
+      "image": "https://i.ibb.co/Kqxr4PV/engagement.jpg",
+      "rating": 4.6,
+      "price": 60000
+    },
+    {
+      "name": "Retirement Parties",
+      "title": "Retirement Party Planner",
+      "id": 5,
+      "description": "We specialize in planning and coordinating retirement parties of all sizes and budgets. Our team of experienced professionals will work with you to create a retirement party that is both fun and memorable for the retiree and their guests.",
+      "image": "https://i.ibb.co/XCQYNtz/Retirement.jpg",
+      "rating": 4.9,
+      "price": 45000
+    },
+    {
+      "name": "Baby Showers",
+      "title": "Baby Shower Planner",
+      "id": 6,
+      "description": "We specialize in planning and coordinating baby showers of all sizes and budgets. Our team of experienced professionals will work with you to create a baby shower that is both fun and memorable for you and your guests.",
+      "image": "https://i.ibb.co/X7d1fqL/baby-Shower.jpg",
+      "rating": 4.8,
+      "price": 45000
+    },
+    {
+      "name": "Corporate Events",
+      "title": "Corporate Event Planner",
+      "id": 7,
+      "description": "We specialize in planning and coordinating corporate events of all sizes and budgets. Our team of experienced professionals will work with you to create a corporate event that is both professional and enjoyable for your guests.",
+      "image": "https://i.ibb.co/3F5t6V4/Corporate-Events.jpg",
+      "rating": 4.7,
+      "price": 12000
+    },
+    {
+      "name": "Galas",
+      "title": "Gala Planner",
+      "id": 8,
+      "description": "We specialize in planning and coordinating galas of all sizes and budgets. Our team of experienced professionals will work with you to create a gala that is both elegant and memorable for you and your guests.",
+      "image": "https://i.ibb.co/Y26vV4f/mixology.webp",
+      "rating": 4.9,
+      "price": 15000
+    },
+    {
+      "name": "Retirement Parties",
+      "title": "Retirement Party Planner",
+      "id": 9,
+      "description": "We specialize in planning and coordinating retirement parties of all sizes and budgets. Our team of experienced professionals will work with you to create a retirement party that is both fun and memorable for the retiree and their guests.",
+      "image": "https://i.ibb.co/XCQYNtz/Retirement.jpg",
+      "rating": 4.9,
+      "price": 35000
+    },
+    {
+      "name": "Baby Showers",
+      "title": "Baby Shower Planner",
+      "id": 10,
+      "description": "We specialize in planning and coordinating baby showers of all sizes and budgets. Our team of experienced professionals will work with you to create a baby shower that is both fun and memorable for you and your guests.",
+      "image": "https://i.ibb.co/X7d1fqL/baby-Shower.jpg",
+      "rating": 4.8,
+      "price": 45000
+    },
+    {
+      "name": "Corporate Events",
+      "title": "Corporate Event Planner",
+      "id": 11,
+      "description": "We specialize in planning and coordinating corporate events of all sizes and budgets. Our team of experienced professionals will work with you to create a corporate event that is both professional and enjoyable for your guests.",
+      "image": "https://i.ibb.co/mXmC55G/banner2.jpg",
+      "rating": 4.7,
+      "price": 12000
+    },
+    {
+      "name": "Galas",
+      "title": "Gala Planner",
+      "id": 12,
+      "description": "We specialize in planning and coordinating galas of all sizes and budgets. Our team of experienced professionals will work with you to create a gala that is both elegant and memorable for you and your guests.",
+      "image": "https://i.ibb.co/KK2HyG1/faestival.webp",
+      "rating": 4.9,
+      "price": 15000
+    }
+]
+        
+
