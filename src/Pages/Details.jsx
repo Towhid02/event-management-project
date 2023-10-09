@@ -9,12 +9,14 @@ const Details = () => {
     const [event, setEvent] = useState({})
     const {id} = useParams()
     const events = useLoaderData()
-
+    
     useEffect(() =>{
-        const findEvent = events.find(event => event.id === id);
+        const findEvent = events?.find(event => event.id == id);
+        console.log(findEvent);
         setEvent(findEvent)
+
     },[ id, events])
-    console.log(findEvent);
+    
     
     return (
         <div>

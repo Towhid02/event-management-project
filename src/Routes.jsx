@@ -5,6 +5,8 @@ import LogIn from "./Components/LogIn";
 import Register from "./Components/Register";
 import Details from "./Pages/Details";
 import Error from "./Error";
+import AboutUs from "./Components/AboutUs";
+import PrivateRoute from "./Shared/PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
                 loader: () => fetch('event.json')
             },
             {
+                path: '/aboutus',
+                element: <AboutUs></AboutUs>,
+            },
+            {
                 path: '/login',
                 element: <LogIn></LogIn>,
                 loader: () => fetch('event.json')
@@ -29,9 +35,9 @@ const router = createBrowserRouter([
                 loader: () => fetch('event.json')
             },
             {
-                path: '/details:id',
-                element: <Details></Details>,
-                loader: () => fetch('event.json')
+                path: '/details/:id',
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: () => fetch('/event.json')
             }
         ]
     }

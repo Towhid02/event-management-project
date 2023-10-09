@@ -7,7 +7,7 @@ import { AuthContext } from "./AuthProvider";
 
 const LogIn = () => {
 
-  const {signIn} = useContext(AuthContext)
+  const {signIn, setUser} = useContext(AuthContext)
 
   const navigate = useNavigate()
 
@@ -16,27 +16,27 @@ const LogIn = () => {
     const form = new FormData(e.currentTarget)
     const email = form.get('email')
     const password = form.get('password')
+    console.log(email, password);
 
     signIn(email, password)
     .then( result => {
       console.log(result.user);
-      e.target.reset()
-      navigate('/')
+      setUser(result.user)
+      navigate("/")
+      // e.target.reset()
     })
     .catch(error =>{
            console.error(error);
          })
+  
   }
-
 
     return (
     <div>
       <Navbar></Navbar>
         <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col ">
-    <div className="text-center lg:text-left">
-      <img src={logo} alt="" />
-      
+    <div className="text-center lg:text-left"> 
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form className="card-body" onSubmit={handleLogIn}>
@@ -68,9 +68,13 @@ const LogIn = () => {
         </div>
       </form>
       <p>Don't have account <button className="btn btn-link"><Link to={'/register'}>Register</Link></button></p>
+      <button className="btn btn-accent">Google</button>
     </div>
+   
   </div>
+  
 </div>
+
 </div>
     );
 };

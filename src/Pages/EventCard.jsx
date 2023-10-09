@@ -19,7 +19,7 @@ console.log(events);
   <p>Rating : {rating} </p>
 </div>
 <div className="card-actions justify-end">
-  <Link to={`/events/${id}`}><button className="btn btn-success">Details</button></Link>
+  <Link to={`/details/${id}`}><button className="btn btn-success">Details</button></Link>
   
 </div>
 </div>
