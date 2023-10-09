@@ -24,7 +24,7 @@ const Home = () => {
           
            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 shadow-4xl p-5'>
             {
-                events.map(event => <EventCard key={events.id} events={event}></EventCard>)
+            events.map(event => <EventCard key={events.id} events={event}></EventCard>)
             }
            </div>
            </div>

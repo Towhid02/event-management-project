@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
 const EventCard = ({events}) => {
 console.log(events);
-        const {name, title, image, price, rating} = events
+        const {id, name, title, image, price, rating} = events
     
     return (
         <div >
@@ -14,11 +15,12 @@ console.log(events);
 <h2 className="text-left text-2xl font-bold">{name}</h2>
 <p className='text-xl text-left'>{title}</p>
 <div className=' flex text-base gap-5 font-semibold text-left'>
-  <p>  Price: {price}  Tk</p>
+  <p>  Budget: {price}  Tk</p>
   <p>Rating : {rating} </p>
 </div>
 <div className="card-actions justify-end">
-  <a className="btn btn-success">Details</a>
+  <Link to={`/events/${id}`}><button className="btn btn-success">Details</button></Link>
+  
 </div>
 </div>
 </div>

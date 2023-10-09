@@ -10,7 +10,8 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
-        errorElement: <Error></Error>,
+        
+        loader: () => fetch('event.json'),
         children: [
             {
                 path: '/',
@@ -20,10 +21,12 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <LogIn></LogIn>,
+                loader: () => fetch('event.json')
             },
             {
                 path: '/register',
                 element: <Register></Register>,
+                loader: () => fetch('event.json')
             },
             {
                 path: '/details:id',

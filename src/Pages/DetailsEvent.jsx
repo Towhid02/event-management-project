@@ -1,9 +1,9 @@
 
 
-const DetailsEvent = ({event}) => {
-    console.log(event);
+const DetailsEvent = ({events}) => {
+    console.log(events);
 
-    const {title, image, description } = event || {};
+    const {title, image, description } = events || {};
     return (
         <div>
            <div className="card card-side bg-base-100 shadow-xl">
