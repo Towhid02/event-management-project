@@ -1,16 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/Screenshot 2023-10-08 011047.png"
 import Navbar from "../Pages/Navbar";
+import { useContext } from "react";
+import { AuthContext } from "./AuthProvider";
 
 
 const LogIn = () => {
+
+  const {signIn} = useContext(AuthContext)
+
+  const navigate = useNavigate()
 
   const handleLogIn = e => {
     e.preventDefault()
     const form = new FormData(e.currentTarget)
     const email = form.get('email')
     const password = form.get('password')
-    console.log(email, password);
+
+    signIn(email, password)
+    .then( result => {
+      console.log(result.user);
+      e.target.reset()
+      navigate('/')
+    })
+    .catch(error =>{
+           console.error(error);
+         })
   }
 
 

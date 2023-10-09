@@ -1,8 +1,17 @@
+import { useContext } from "react";
 import logo from "../assets/Screenshot 2023-10-08 011047.png"
+import { AuthContext } from "./AuthProvider";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
 
   const handleRegister = e =>{
+
+    const {createUser} = useContext(AuthContext)
+
+    const navigate = useNavigate()
+
+
     e.preventDefault()
     const form = new FormData(e.currentTarget)
     const name = form.get('name')
@@ -10,6 +19,17 @@ const Register = () => {
     const email = form.get('email')
     const password = form.get('password')
     console.log( name, phone, email, password);
+
+    createUser(email, password)
+    .then( result => {
+      console.log(result.user);
+      e.target.reset()
+      navigate('/')
+    })
+    .catch(error =>{
+           console.log(error);
+         })
+  
   }
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -39,7 +59,7 @@ const Register = () => {
           type="number" 
           name="phone"
           placeholder="phone" 
-          className="input input-bordered" required />
+          className="input input-bordered" />
         </div>
         <div className="form-control">
           <label className="label">
@@ -65,6 +85,7 @@ const Register = () => {
           <button className="btn btn-primary">Register</button>
         </div>
       </form>
+      <p>Already have account <button className="btn btn-link"><Link to={'/login'}>Log In</Link></button></p>
     </div>
   </div>
 </div>

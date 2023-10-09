@@ -3,11 +3,14 @@ import Root from "./Root";
 import Home from "./Pages/Home";
 import LogIn from "./Components/LogIn";
 import Register from "./Components/Register";
+import Details from "./Pages/Details";
+import Error from "./Error";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
@@ -21,6 +24,11 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>,
+            },
+            {
+                path: '/details:id',
+                element: <Details></Details>,
+                loader: () => fetch('event.json')
             }
         ]
     }
