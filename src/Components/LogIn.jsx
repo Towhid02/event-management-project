@@ -68,7 +68,7 @@ const LogIn = () => {
         </div>
       </form>
       <p>Don't have account <button className="btn btn-link"><Link to={'/register'}>Register</Link></button></p>
-      <button className="btn btn-accent">Google</button>
+      <button className="btn btn-accent" onClick={handleGoogle}><FaGoogle></FaGoogle>Google</button>
     </div>
    
   </div>

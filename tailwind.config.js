@@ -7,20 +7,15 @@ export default {
   theme: {
     extend: {
       fontFamily : {
-        nunito : "'Nunito', sans-serif"
+        nunito : "'Nunito', sans-serif",
+        galada : "'Galada', cursive",
+        grand : "'Grand Hotel', cursive",
+        itim : "'Itim', cursive",
       }
       
     },
   },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {        
-            "base-100": "#ffffff",       
-        },
-      },
-    ],
-  },
   plugins: [require("daisyui")],
+  
 }
 

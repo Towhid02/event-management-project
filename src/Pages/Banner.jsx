@@ -7,9 +7,9 @@ const Banner = () => {
        <div className="carousel w-full h-4/5">
   <div id="slide1" className="carousel-item relative w-full">
     <img src={banner4} className=" w-full m-auto rounded-3xl brightness-50 opacity-95" />
-    <div  className=" absolute inset-0 p-24 lg:p-52 ">
-    <h1 className=" text-6xl font-bold text-[#EAC696]">TOWHID EVENTS</h1>
-    <p className=" p-5 text-2xl text-white font-semibold">Event planners work in a wide range of industries, including corporate events, weddings, social gatherings, nonprofit functions, and more. Their primary goal is to create memorable and seamless experiences for clients and attendees.</p>
+    <div  className=" absolute inset-0 p-5 md:p-24 lg:p-52 ">
+    <h1 className=" text-2xl  md:text-6xl font-bold text-[#35d83d] font-galada">TOWHID EVENTS</h1>
+    <p className="  md:p-5 text-base md:text-2xl text-white  font-itim">Event planners work in a wide range of industries, including corporate events, weddings, social gatherings, nonprofit functions, and more. Their primary goal is to create memorable and seamless experiences for clients and attendees.</p>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide3" className="btn btn-circle">❮</a> 
@@ -18,9 +18,9 @@ const Banner = () => {
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
     <img src={banner2} className="  w-full m-auto rounded-3xl brightness-50 opacity-95"/>
-    <div  className="  absolute inset-0 p-24 lg:p-52">
-    <h1 className=" text-6xl font-bold text-[#EAC696]">TOWHID EVENTS</h1>
-    <p className=" p-5 text-2xl text-white font-semibold" >Event planners work in a wide range of industries, including corporate events, weddings, social gatherings, nonprofit functions, and more. Their primary goal is to create memorable and seamless experiences for clients and attendees.</p>
+    <div  className=" absolute inset-0 p-5 md:p-24 lg:p-52">
+    <h1 className=" text-2xl  md:text-6xl font-bold text-[#35d83d] font-galada">TOWHID EVENTS</h1>
+    <p className=" md:p-5 text-base md:text-2xl text-white  font-itim" >Event planners work in a wide range of industries, including corporate events, weddings, social gatherings, nonprofit functions, and more. Their primary goal is to create memorable and seamless experiences for clients and attendees.</p>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 
@@ -29,9 +29,9 @@ const Banner = () => {
   </div> 
   <div id="slide3" className="carousel-item relative w-full">
     <img src={banner1}className="w-full m-auto rounded-3xl brightness-50 opacity-95"/>
-    <div  className=" absolute inset-0 p-24 lg:p-52">
-    <h1 className=" text-6xl font-bold text-[#EAC696]">TOWHID EVENTS</h1>
-    <p className=" p-5 text-2xl text-white font-semibold">Event planners work in a wide range of industries, including corporate events, weddings, social gatherings, nonprofit functions, and more. Their primary goal is to create memorable and seamless experiences for clients and attendees.</p>
+    <div  className=" absolute inset-0 p-5 md:p-24 lg:p-52">
+    <h1 className=" text-2xl  md:text-6xl font-bold text-[#35d83d] font-galada">TOWHID EVENTS</h1>
+    <p className="md:p-5 text-base md:text-2xl text-white  font-itim">Event planners work in a wide range of industries, including corporate events, weddings, social gatherings, nonprofit functions, and more. Their primary goal is to create memorable and seamless experiences for clients and attendees.</p>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide2" className="btn btn-circle">❮</a> 

@@ -4,11 +4,11 @@ import logo from "../assets/Screenshot 2023-10-08 011047.png"
 const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-center p-10 bg-slate-200 ">
+            <footer className="footer footer-center p-10 ">
   <aside>
-   <img src={logo} alt="" />
+  <a className="btn btn-ghost normal-case text-3xl font-galada  text-[#21ff06]">Magic_Event</a>
     <p className="font-bold">
-      Towhid Events Ltd. <br/>Providing reliable services since 2019
+      Towhid Events Company Ltd. <br/>Providing reliable services since 2019
     </p> 
     <p>Copyright © 2023 - All right reserved</p>
   </aside> 
